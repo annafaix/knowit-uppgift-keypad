@@ -8,9 +8,13 @@ A log in function with randomized keypad using Fisher–Yates shuffle technique.
 
 ReactJS, SASS, HTML
 
-## Available Scripts
+## How to run
 
 In the project directory, you can run:
+
+### `npm install` 
+
+To intall all packages and than you can run:
 
 ### `npm start`
 
