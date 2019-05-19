@@ -1,0 +1,117 @@
+$backgroung-color: #EFEFEF;
+$font-color: #707070;
+$digit-color:#000000;
+$digit-background:#FFFFFF;
+$submit-button-green: #009681;
+$cancel-button-red:#F57E7E;
+
+.main-box{
+  width:414px;
+  height: 736px;
+  background-color: $backgroung-color;
+  margin:auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  justify-items:center;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .input-container{
+    text-align: center;
+    padding-bottom:31px;
+
+    p {
+      display: inline-block;
+      text-align: center;
+      font-size: 20px;
+      line-height: 27px;
+      color:$font-color;
+      border-bottom: 1px solid $font-color;
+      font-family: 'Open Sans', sans-serif;
+      margin-bottom: 79px;
+    }
+    input{
+      border-radius: 5px;
+      border: 1px solid #DCDCDC;
+      color: $font-color;
+      height: 54px;
+      width: 375px;
+      text-align: center;
+      line-height: 27px;
+      font-size: 20px;
+    }
+  }
+  .digits-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-gap: 5px;
+    align-items: center;
+    justify-items: center;
+  
+    #digit-button{
+      width: 90px;
+      height: 43px;
+      background-color:$digit-background;
+      border:1px solid $digit-background;
+      border-radius:6px;
+      font-size: 25px;
+      line-height: 34px;
+      text-align: center;
+      font-family:  'Open Sans', sans-serif;
+      color:$digit-color;
+  
+      &:hover{
+        background-color:rgba(0, 150, 129, 0.35);
+        border-color: rgba(0, 150, 129, 0.35);
+      }
+     
+      &:disabled{
+        background-color: rgba(194, 194, 194,0.15);
+        border-color:  rgba(194, 194, 194,0.15);
+      }
+    }
+  }
+  .buttons-submit-cancel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 16px;
+
+    #submit-button{
+      background-color: $submit-button-green;
+      border: 1px solid $submit-button-green;
+      border-radius: 6px;
+      color: #FFFFFF;
+      font-size: 20px;
+      width:255px;
+      height: 44px;
+      margin-right: 10px;
+    
+      &:disabled{
+      background-color:rgba(0, 150, 129, 0.35);
+      border:1px solid rgba(0, 150, 129, 0.35) ;
+      }
+    }
+    #cancel-button{
+      background-color:$cancel-button-red;
+      border: 1px solid $cancel-button-red;
+      border-radius: 6px;
+      color: #FFFFFF;
+      font-size: 20px;
+      width:106px;
+      height: 44px;
+    
+      &:disabled{
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+
+
